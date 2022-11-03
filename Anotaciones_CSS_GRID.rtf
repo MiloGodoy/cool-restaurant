@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fswiss\fcharset0 Arial-BoldMT;
+\f3\fnil\fcharset0 LucidaGrande-Bold;\f4\fnil\fcharset0 LucidaGrande;\f5\fswiss\fcharset0 Helvetica-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red24\green25\blue27;\red255\green255\blue255;\red0\green0\blue0;
+\red177\green193\blue220;\red235\green240\blue246;\red0\green0\blue0;\red237\green241\blue246;\red236\green241\blue246;
+\red255\green255\blue255;\red238\green243\blue246;}
+{\*\expandedcolortbl;;\cssrgb\c12549\c12941\c14118;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+\cssrgb\c74510\c80392\c89020;\cssrgb\c93725\c95294\c97255;\cssrgb\c0\c1\c1;\cssrgb\c94190\c95769\c97261;\cssrgb\c94075\c95652\c97260;
+\cssrgb\c100000\c100000\c99985;\cssrgb\c94534\c96120\c97257;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12300\viewh10220\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+
+\f1\fs32 	  
+\f2\b Apuntes \'fatiles CSS Grid:
+\f1\b0 \
+\
+
+\f2\b 	 grid-template-columns:
+\f1\b0  \cf2 \cb3 \expnd0\expndtw0\kerning0
+define el n\'famero de las l\'edneas y las funciones 	 de tama\'f1o de l\'ednea de\'a0grid columns. \
+\
+	  Ejemplo: grid-template-columns: 100px, 200px, 300px\
+\
+	  En este caso se generan 3 columnas (porque se enumeran 3 	  dimensiones) y las dimensiones de cada una son 100, 200 y 300 	  pixeles.\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f2\b \cf2 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}grid-auto-rows:
+\f1\b0  especifica el tama\'f1o de una nueva fila creada de forma impl\'edcita.\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f4 \uc0\u8259 
+\f1 	}\expnd0\expndtw0\kerning0
+\
+{\listtext	
+\f4 \uc0\u8259 
+\f1 	}Ejemplo: grid-auto-rows: 150px\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	
+\f4 \uc0\u8259 
+\f1 	}\expnd0\expndtw0\kerning0
+\
+\pard\tx0\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf2 		Los bloques tienen 150 pixeles, y si se crean m\'e1s filas, todas tendr\'e1n el mismo alto de 150 pixeles.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 	\
+	
+\f2\b grid-auto-flow: 
+\f1\b0 crea nuevas filas o columnas de acuerdo a lo que se         	designe\
+	\
+	Ejemplo: grid-auto-flow: column;\
+	se crear\'e1n columnas para completar la grilla. A medida que se 	agreguen elementos, se agregaran columnas.\
+\
+	gap: sirve para separar entre filas y columnas. \
+	column-gap: introduce el espaciado entre columnas.\
+	row-gap: introduce el espaciado entre filas.\
+	\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\b \cf2 Propiedades de alineaci\'f3n de los \'edtems
+\f1\b0 :\
+\
+Justify-items: alinea los \'edtems horizontalmente\
+\
+Align-items: alinea los \'edtems verticalmente\
+\
+Place-items: alinea horizontal y verticalmente\
+\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f2\b \cf4 Propiedades de alineaci\'f3n de los bloques:
+\f1\b0 \
+\
+Justify-content\
+Alignt-content\
+Place-content\
+\
+
+\f2\b Alineaci\'f3n de \'edtems (por separado):\
+\
+
+\f1\b0 Justify-self\
+Align-self\
+place-self
+\f0\fs28 \cf6 \
+\
+\
+\cf4 Para colocar en diferentes lugares las
+\f5\b  grillas, es \'fatil usar:\
+
+\f0\b0 \
+
+\f5\b Grid-column-start o grid-row-start
+\f0\b0  y definir donde empieza y termina un objeto\
+\
+Ejemplo: grid-column-start: 2/4\
+\
+La otra forma es utilizando 
+\f5\b grid-\'e1rea
+\f0\b0  y se define la fila donde comienza, la columna donde comienza, la fila donde termina y la columna donde termina\
+\
+Ejemplo: grid-area: 2 / 3 / 3 / 4;\
+\
+
+\f5\b Funciones especiales:\
+
+\f0\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl420\partightenfactor0
+\ls2\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+minmax: ayuda a declarar el tama\'f1o minimo y maximo para el ancho y alto de una celda, sin depender del contenido que tengamos en ella\uc0\u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl420\partightenfactor0
+\ls2\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+repeat : se usa cuando todas las columnas o filas tienen el msmo ancho y evitar repetir el tama\'f1o de las columnas\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl420\partightenfactor0
+\ls2\ilvl0\cf7 \cb7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\uc0\u8232 \cf6 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl420\partightenfactor0
+\ls2\ilvl0\cf6 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf7 \cb10  auto: par\'e1metro que se utiliza para hacer que la celda se ajuste al tama\'f1o del contenido (ya sea fila o columna, tipo excel)\
+\pard\tx566\pardeftab720\sl420\partightenfactor0
+\cf7 \expnd0\expndtw0\kerning0
+\
+Keywords especiales:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl420\partightenfactor0
+\ls3\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+fr : Es una unidad de medida especial de css grid para darle ancho o alto a filas y columnas 1fr representa una fraccion del total de columnas o filas.\uc0\u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl420\partightenfactor0
+\ls3\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+min-content : Ajusta el ancho de la celda lo m\'ednimo posible sin romper su contenido.\uc0\u8232 \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+max-content : Ajusta el ancho de la celda lo m\'e1ximo posible para mostrar su contenido.\uc0\u8232 \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+auto-fill : Agrega columnas \'93fantasma\'94 que rellenan el espacio sobrante del contenedor.\uc0\u8232 \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+auto-fit : Ensancha las columnas para que ocupen todo el espacio del contenedor.\uc0\u8232 \
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f5\b \cf7 auto-fill y auto-fit
+\f0\b0 \'a0ayudan a la grilla a ocupar el 100% del espacio disponible\
+\pard\tx566\pardeftab720\sl420\partightenfactor0
+\cf7 \
+\pard\tx566\pardeftab720\sl420\partightenfactor0
+\cf7 \
+\
+}
